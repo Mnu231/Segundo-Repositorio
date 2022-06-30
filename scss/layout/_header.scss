@@ -1,0 +1,25 @@
+@import '../base/base';
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.nav-algoBonito{
+     .nav-lista{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        li{
+            a{
+                margin: 10px;
+                padding-top: 10px;
+                text-decoration: none;
+                color: $color-prinicpal;
+                font-size: larger;
+                font-weight:bolder
+            }
+        }   
+    }
+}
