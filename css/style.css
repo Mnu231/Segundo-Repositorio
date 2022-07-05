@@ -21,6 +21,42 @@
     font-size: larger;
     font-weight: bolder; }
 
+/*
+            background-color: map-get($colores , "color-secundario");*/
+.main-contacto {
+  background-image: url(https://thumbs.dreamstime.com/z/el-doodle-de-los-medios-sociales-es-un-patr%C3%B3n-sin-fisuras-ornamento-repetido-con-elementos-dibujados-mano-sobre-fondo-blanco-162559147.jpg);
+  background-position: center center; }
+  .main-contacto section article form {
+    padding: 20px;
+    background-color: rgba(255, 119, 28, 0.719); }
+    .main-contacto section article form .titulo, .main-contacto section article form .labels, .main-contacto section article form .selector, .main-contacto section article form .listaDesplegable, .main-contacto section article form .cuestionario {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 25px;
+      padding: 20px; }
+      .main-contacto section article form .titulo h2, .main-contacto section article form .labels h2, .main-contacto section article form .selector h2, .main-contacto section article form .listaDesplegable h2, .main-contacto section article form .cuestionario h2, .main-contacto section article form .titulo p, .main-contacto section article form .labels p, .main-contacto section article form .selector p, .main-contacto section article form .listaDesplegable p, .main-contacto section article form .cuestionario p {
+        color: #ff771c;
+        font-weight: 900; }
+      .main-contacto section article form .titulo p, .main-contacto section article form .labels p, .main-contacto section article form .selector p, .main-contacto section article form .listaDesplegable p, .main-contacto section article form .cuestionario p {
+        font-weight: 500; }
+    .main-contacto section article form .labels input, .main-contacto section article form .selector input, .main-contacto section article form .listaDesplegable input, .main-contacto section article form .cuestionario input {
+      background-color: #dfd3d3;
+      border: 1px;
+      border-style: solid;
+      border-radius: 20px;
+      padding-left: 20px; }
+    .main-contacto section article form .cuestionario .enviar {
+      background-color: #ff771c;
+      color: white;
+      padding: 10px;
+      border: 1px;
+      border-style: solid;
+      border-radius: 10px; }
+
 .destacados {
   display: flex;
   justify-content: center;
@@ -36,12 +72,17 @@
   padding-bottom: 100px;
   background-image: url(https://images.pexels.com/photos/1050822/pexels-photo-1050822.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-position: center center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1em; }
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1em;
+  justify-items: center; }
+  @media screen and (max-width: 1522px) {
+    .section-imagenes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center; } }
   .section-imagenes article figure {
     background-color: rgba(0, 0, 0, 0.603); }
     .section-imagenes article figure a img {
@@ -68,22 +109,45 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 1em; }
+    gap: 1em;
+    justify-items: center; }
+    @media screen and (max-width: 1522px) {
+      .tips-redes .article-redes {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center; } }
     .tips-redes .article-redes .whatsapp {
       display: flex;
       flex-direction: column; }
+  .tips-redes .article-redesF {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .tips-redes .article-redesF div {
+      margin: 30px; }
 
 .section-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: #dfd3d3;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center; }
-  .section-footer article {
-    margin: 50px;
-    text-align: center; }
+  .section-footer .caja, .section-footer .camion, .section-footer .tarjeta {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .section-footer .caja figure, .section-footer .camion figure, .section-footer .tarjeta figure {
+      margin: 10px; }
+  .section-footer .camion h5 {
+    margin: 10px; }
   .section-footer .tarjeta {
-    padding: 0px 50px 0px 50px;
+    padding: 0px 25px 0px 25px;
     border-bottom: 0;
     border-top: 0;
     border-left: 5px;

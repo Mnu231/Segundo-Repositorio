@@ -1,0 +1,66 @@
+@import '../base/base';
+@import '../utilities/mixin';
+/*
+            background-color: map-get($colores , "color-secundario");*/
+.main-contacto{
+    background-image: url(https://thumbs.dreamstime.com/z/el-doodle-de-los-medios-sociales-es-un-patr%C3%B3n-sin-fisuras-ornamento-repetido-con-elementos-dibujados-mano-sobre-fondo-blanco-162559147.jpg);
+    background-position: center center;
+    
+    section{
+        article{
+            form{
+                padding: 20px;
+                background-color: map-get($colores , "color-secundarioF" );
+
+                .titulo{
+                    background-color: map-get($colores, "color-terciario" );
+                    @include flexColum (wrap , flex-start);
+                    margin: 25px;
+                    padding: 20px;
+                    h2{
+                        color: map-get($colores , "color-secundario" );
+                        font-weight: 900;
+                    }
+                    p{
+                        @extend h2;
+                        font-weight: 500;
+    
+                    }
+                }
+                .labels{
+                    @extend .titulo; 
+                    input{
+                        background-color: map-get($colores, "color-fondo" ) ;
+                        border: 1px;
+                        border-style: solid;
+                        border-radius: 20px;
+                        padding-left: 20px;
+                    }
+                }
+                .selector{
+                    @extend .labels;
+                }
+                .listaDesplegable{
+                    @extend .labels;
+                }
+                .cuestionario{
+                    @extend .labels;
+                    .enviar{
+                        background-color: map-get($colores, "color-secundario" );
+                        color: map-get($colores, "color-terciario" );
+                        padding: 10px;
+                        border: 1px;
+                        border-style: solid;
+                        border-radius: 10px;
+                        border-color: ($colores, "color-secundarioF" );
+                    }
+                    .resetear{
+                        @extend .enviar;
+                    }
+                }
+                
+            }
+        }
+    }
+
+}

@@ -1,17 +1,29 @@
 @import '../base/base';
-
+@import '../utilities/mixin';
 .section-footer{
+    padding-top: 50px ;
+    padding-bottom: 50px;
     background-color: $color-fondo;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    article{
-        margin: 50px;
-        text-align: center;
+    
+    @include flexRow ( wrap , center );
+
+    .caja{
+        @include flexRow ( wrap , center );
+        align-items: center;
+        figure{
+            margin: 10px;
+        }
     }
+    .camion{
+        @extend .caja;
+        h5{
+            margin: 10px;
+        }
+    }
+
     .tarjeta{
-        padding: 0px 50px 0px 50px;
+        @extend .caja;
+        padding: 0px 25px 0px 25px;
         border-bottom: 0;
         border-top: 0;
         border-left: 5px;

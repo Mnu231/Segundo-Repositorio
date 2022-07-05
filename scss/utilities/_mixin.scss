@@ -1,0 +1,24 @@
+
+@mixin flexRow ( $fWrap , $jContent ){
+    display: flex;
+    flex-direction: row;
+    flex-wrap: $fWrap;
+    justify-content: $jContent;
+}
+@mixin flexColum ( $fWrap , $alingItems ){
+    display: flex;
+    flex-direction: column;
+    align-items: $alingItems;
+    flex-wrap: $fWrap;
+    justify-content: space-around;
+}
+@mixin grids ( $columnas , $filas , $espacio ){
+    display               : grid;
+    grid-template-columns : repeat( $columnas , 1fr );
+    grid-template-rows    : repeat( $filas , 1fr );
+    gap: $espacio;
+    justify-items: center;
+    @media screen and (max-width:1522px) {
+        @include flexRow(wrap , center )
+    }
+}
