@@ -28,7 +28,7 @@
   background-position: center center; }
   .main-contacto section article form {
     padding: 20px;
-    background-color: rgba(255, 119, 28, 0.719); }
+    background-color: black; }
     .main-contacto section article form .titulo, .main-contacto section article form .labels, .main-contacto section article form .selector, .main-contacto section article form .listaDesplegable, .main-contacto section article form .cuestionario {
       background-color: white;
       display: flex;
@@ -39,7 +39,7 @@
       margin: 25px;
       padding: 20px; }
       .main-contacto section article form .titulo h2, .main-contacto section article form .labels h2, .main-contacto section article form .selector h2, .main-contacto section article form .listaDesplegable h2, .main-contacto section article form .cuestionario h2, .main-contacto section article form .titulo p, .main-contacto section article form .labels p, .main-contacto section article form .selector p, .main-contacto section article form .listaDesplegable p, .main-contacto section article form .cuestionario p {
-        color: #ff771c;
+        color: map-get #ff771c;
         font-weight: 900; }
       .main-contacto section article form .titulo p, .main-contacto section article form .labels p, .main-contacto section article form .selector p, .main-contacto section article form .listaDesplegable p, .main-contacto section article form .cuestionario p {
         font-weight: 500; }
@@ -49,13 +49,14 @@
       border-style: solid;
       border-radius: 20px;
       padding-left: 20px; }
-    .main-contacto section article form .cuestionario .enviar {
+    .main-contacto section article form .cuestionario .enviar, .main-contacto section article form .cuestionario .resetear {
       background-color: #ff771c;
       color: white;
       padding: 10px;
       border: 1px;
       border-style: solid;
-      border-radius: 10px; }
+      border-radius: 10px;
+      border-color: rgba(0, 0, 0, 0.603); }
 
 .destacados {
   display: flex;

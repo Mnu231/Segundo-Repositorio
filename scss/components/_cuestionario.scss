@@ -10,15 +10,15 @@
         article{
             form{
                 padding: 20px;
-                background-color: map-get($colores , "color-secundarioF" );
+                background-color: black;
 
                 .titulo{
-                    background-color: map-get($colores, "color-terciario" );
+                    background-color: white;
                     @include flexColum (wrap , flex-start);
                     margin: 25px;
                     padding: 20px;
                     h2{
-                        color: map-get($colores , "color-secundario" );
+                        color: map-get $color-secundario;
                         font-weight: 900;
                     }
                     p{
@@ -30,7 +30,7 @@
                 .labels{
                     @extend .titulo; 
                     input{
-                        background-color: map-get($colores, "color-fondo" ) ;
+                        background-color: $color-fondo;
                         border: 1px;
                         border-style: solid;
                         border-radius: 20px;
@@ -46,13 +46,13 @@
                 .cuestionario{
                     @extend .labels;
                     .enviar{
-                        background-color: map-get($colores, "color-secundario" );
-                        color: map-get($colores, "color-terciario" );
+                        background-color: $color-secundario;
+                        color: $color-terciario;
                         padding: 10px;
                         border: 1px;
                         border-style: solid;
                         border-radius: 10px;
-                        border-color: ($colores, "color-secundarioF" );
+                        border-color: $color-fondo2;
                     }
                     .resetear{
                         @extend .enviar;
