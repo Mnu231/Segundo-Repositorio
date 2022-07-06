@@ -18,7 +18,7 @@
                     margin: 25px;
                     padding: 20px;
                     h2{
-                        color: map-get $color-secundario;
+                        color: $color-secundario;
                         font-weight: 900;
                     }
                     p{
@@ -35,6 +35,10 @@
                         border-style: solid;
                         border-radius: 20px;
                         padding-left: 20px;
+                        @media screen and (max-width: 350px) {
+                            padding: 0px;
+                            max-width: 100px;
+                        }
                     }
                 }
                 .selector{
@@ -67,10 +71,9 @@
                         margin: 10px;
                         p{
                             margin: 10px;
+                            
                         }
-                        input{
-                            @extend .p;
-                        }
+                       
                     }
                     
                 }

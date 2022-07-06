@@ -12,6 +12,9 @@
         font-size: 3rem;
         font-weight: 900;
         margin: 20px;
+        @media screen and (max-width: 350px) {
+            font-size: large;
+        }
     }
 }
 .section-imagenes{
@@ -35,7 +38,10 @@
             }
             a{
                 img{
-                    max-width: 350px; 
+                    max-width: 350px;
+                    @media screen and (max-width: 350px) {
+                        max-width: 150px;
+                    }
                 }
             }
             figcaption{    
@@ -48,6 +54,9 @@
                 color: $color-secundario;
                 font-size: large;
                 font-weight: 900;
+                @media screen and (max-width: 350px) {
+                    margin-left: 50px;
+                }
                 }
         }
     }
@@ -71,6 +80,17 @@
         @include flexRow (wrap , space-evenly);
         div{
             margin: 30px;
+        }
+    }
+    .article-tips{
+        div{
+            .sale{
+                max-width: 500px;
+                @media screen and (max-width:550px) {
+                    max-width: 250px;
+                    margin-bottom: 30px;
+                }
+            }
         }
     }
 }

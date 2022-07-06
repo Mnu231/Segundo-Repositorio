@@ -12,7 +12,8 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  flex-wrap: wrap; }
   .nav-algoBonito .nav-lista li a {
     margin: 10px;
     padding-top: 10px;
@@ -39,7 +40,7 @@
       margin: 25px;
       padding: 20px; }
       .main-contacto section article form .titulo h2, .main-contacto section article form .labels h2, .main-contacto section article form .selector h2, .main-contacto section article form .listaDesplegable h2, .main-contacto section article form .cuestionario h2, .main-contacto section article form .titulo p, .main-contacto section article form .labels p, .main-contacto section article form .selector p, .main-contacto section article form .listaDesplegable p, .main-contacto section article form .cuestionario p {
-        color: map-get #ff771c;
+        color: #ff771c;
         font-weight: 900; }
       .main-contacto section article form .titulo p, .main-contacto section article form .labels p, .main-contacto section article form .selector p, .main-contacto section article form .listaDesplegable p, .main-contacto section article form .cuestionario p {
         font-weight: 500; }
@@ -49,6 +50,10 @@
       border-style: solid;
       border-radius: 20px;
       padding-left: 20px; }
+      @media screen and (max-width: 350px) {
+        .main-contacto section article form .labels input, .main-contacto section article form .selector input, .main-contacto section article form .listaDesplegable input, .main-contacto section article form .cuestionario input {
+          padding: 0px;
+          max-width: 100px; } }
     .main-contacto section article form .cuestionario .botones .enviar, .main-contacto section article form .cuestionario .botones .resetear {
       background-color: #ff771c;
       color: white;
@@ -76,6 +81,9 @@
     font-size: 3rem;
     font-weight: 900;
     margin: 20px; }
+    @media screen and (max-width: 350px) {
+      .destacados h1 {
+        font-size: large; } }
 
 .section-imagenes {
   padding-top: 100px;
@@ -102,6 +110,9 @@
       transform: scale(1.15); }
     .section-imagenes article figure a img {
       max-width: 350px; }
+      @media screen and (max-width: 350px) {
+        .section-imagenes article figure a img {
+          max-width: 150px; } }
     .section-imagenes article figure figcaption {
       text-align: center;
       color: white;
@@ -111,6 +122,9 @@
       color: #ff771c;
       font-size: large;
       font-weight: 900; }
+      @media screen and (max-width: 350px) {
+        .section-imagenes article figure span {
+          margin-left: 50px; } }
 
 .tips-redes {
   background-image: url(https://images.pexels.com/photos/2911545/pexels-photo-2911545.jpeg?cs=srgb&dl=pexels-dids-2911545.jpg&fm=jpg);
@@ -142,6 +156,12 @@
     justify-content: space-evenly; }
     .tips-redes .article-redesF div {
       margin: 30px; }
+  .tips-redes .article-tips div .sale {
+    max-width: 500px; }
+    @media screen and (max-width: 550px) {
+      .tips-redes .article-tips div .sale {
+        max-width: 250px;
+        margin-bottom: 30px; } }
 
 .section-footer {
   padding-top: 50px;
