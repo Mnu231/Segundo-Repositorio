@@ -66,6 +66,9 @@ div {
       border-radius: 10px;
       border-color: rgba(0, 0, 0, 0.603);
       margin: 10px; }
+      @media screen and (max-width: 350px) {
+        .main-contacto section article form .cuestionario .botones .enviar, .main-contacto section article form .cuestionario .botones .resetear {
+          max-width: 150px; } }
     .main-contacto section article form .cuestionario .checkbox {
       display: flex;
       flex-direction: row;
@@ -112,6 +115,113 @@ header {
       font-size: larger; }
   .main-nosotros .misionVisionValores .vision {
     max-width: 770px; }
+
+.main-prendas .section-producto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.main-prendas .imgProducto article figure .imagenGrande {
+  max-width: 600px; }
+  @media screen and (max-width: 600px) {
+    .main-prendas .imgProducto article figure .imagenGrande {
+      max-width: 250px; } }
+
+.main-prendas .menu {
+  margin-top: 50px;
+  margin-left: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  max-width: 480px; }
+  .main-prendas .menu .precioNombre h2, .main-prendas .menu .precioNombre .main-contacto section article form .titulo p, .main-contacto section article form .titulo .main-prendas .menu .precioNombre p, .main-prendas .menu .precioNombre .main-contacto section article form .labels p, .main-contacto section article form .labels .main-prendas .menu .precioNombre p, .main-prendas .menu .precioNombre .main-contacto section article form .selector p, .main-contacto section article form .selector .main-prendas .menu .precioNombre p, .main-prendas .menu .precioNombre .main-contacto section article form .listaDesplegable p, .main-contacto section article form .listaDesplegable .main-prendas .menu .precioNombre p, .main-prendas .menu .precioNombre .main-contacto section article form .cuestionario p, .main-contacto section article form .cuestionario .main-prendas .menu .precioNombre p {
+    color: #ff771c; }
+  .main-prendas .menu .precioNombre span {
+    font-size: xx-large; }
+  .main-prendas .menu .descripcion .descripcion-titulo {
+    font-weight: 500;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  .main-prendas .menu .selector-color {
+    margin-bottom: 25px; }
+    .main-prendas .menu .selector-color p {
+      font-weight: 500;
+      font-size: large;
+      margin-top: 10px;
+      margin-bottom: 5px; }
+    .main-prendas .menu .selector-color .selector {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; }
+      .main-prendas .menu .selector-color .selector div span {
+        margin-left: 15px; }
+      .main-prendas .menu .selector-color .selector div button {
+        padding: 5px; }
+  .main-prendas .menu .selector-talle p {
+    font-weight: 500;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  .main-prendas .menu .selector-talle button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ff771c;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all; }
+    .main-prendas .menu .selector-talle button:hover {
+      background: white;
+      color: #ff771c;
+      border: 3px;
+      border-style: solid;
+      border-color: #ff771c; }
+
+.main-prendas .selector-cantidad {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row; }
+  .main-prendas .selector-cantidad p {
+    font-weight: 500;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  .main-prendas .selector-cantidad select {
+    margin-left: 20px; }
+
+.main-prendas .boton-comprar {
+  margin-top: 15px;
+  margin-bottom: 10px; }
+  .main-prendas .boton-comprar input {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 50px;
+    background-color: #ff771c;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s ease all; }
+    .main-prendas .boton-comprar input:hover {
+      background: white;
+      color: #ff771c;
+      border: 3px;
+      border-style: solid;
+      border-color: #ff771c; }
 
 .destacados {
   display: flex;

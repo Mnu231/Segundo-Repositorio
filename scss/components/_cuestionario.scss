@@ -60,6 +60,9 @@
                             border-radius: 10px;
                             border-color: $color-fondo2;
                             margin: 10px;
+                            @media screen and (max-width: 350px) {
+                                max-width: 150px;
+                            }
                         }
                         .resetear{
                             @extend .enviar;
