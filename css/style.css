@@ -22,8 +22,11 @@
     font-size: larger;
     font-weight: bolder; }
 
-/*
-            background-color: map-get($colores , "color-secundario");*/
+div {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
 .main-contacto {
   background-image: url(https://thumbs.dreamstime.com/z/el-doodle-de-los-medios-sociales-es-un-patr%C3%B3n-sin-fisuras-ornamento-repetido-con-elementos-dibujados-mano-sobre-fondo-blanco-162559147.jpg);
   background-position: center center; }
@@ -72,6 +75,9 @@
       .main-contacto section article form .cuestionario .checkbox p {
         margin: 10px; }
 
+.main-nosotros {
+  background-color: black; }
+
 .destacados {
   display: flex;
   justify-content: center;
@@ -83,6 +89,14 @@
     margin: 20px; }
     @media screen and (max-width: 350px) {
       .destacados h1 {
+        font-size: large; } }
+  .destacados h2, .destacados .main-contacto section article form .titulo p, .main-contacto section article form .titulo .destacados p, .destacados .main-contacto section article form .labels p, .main-contacto section article form .labels .destacados p, .destacados .main-contacto section article form .selector p, .main-contacto section article form .selector .destacados p, .destacados .main-contacto section article form .listaDesplegable p, .main-contacto section article form .listaDesplegable .destacados p, .destacados .main-contacto section article form .cuestionario p, .main-contacto section article form .cuestionario .destacados p {
+    color: black;
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 20px; }
+    @media screen and (max-width: 350px) {
+      .destacados h2, .destacados .main-contacto section article form .titulo p, .main-contacto section article form .titulo .destacados p, .destacados .main-contacto section article form .labels p, .main-contacto section article form .labels .destacados p, .destacados .main-contacto section article form .selector p, .main-contacto section article form .selector .destacados p, .destacados .main-contacto section article form .listaDesplegable p, .main-contacto section article form .listaDesplegable .destacados p, .destacados .main-contacto section article form .cuestionario p, .main-contacto section article form .cuestionario .destacados p {
         font-size: large; } }
 
 .section-imagenes {
@@ -108,6 +122,16 @@
     position: relative; }
     .section-imagenes article figure:hover {
       transform: scale(1.15); }
+    .section-imagenes article figure a .new {
+      height: 19px;
+      background: #ff771c;
+      padding: 10px 20px;
+      font-weight: 700;
+      position: absolute;
+      top: 0;
+      right: 10px;
+      z-index: 1;
+      color: #FFF; }
     .section-imagenes article figure a img {
       max-width: 350px; }
       @media screen and (max-width: 350px) {
@@ -149,13 +173,17 @@
     .tips-redes .article-redes .whatsapp {
       display: flex;
       flex-direction: column; }
-  .tips-redes .article-redesF {
+  .tips-redes .article-redes {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    .tips-redes .article-redesF div {
+    .tips-redes .article-redes div {
+      transition: all 300ms;
+      position: relative;
       margin: 30px; }
+      .tips-redes .article-redes div:hover {
+        transform: scale(1.15); }
   .tips-redes .article-tips div .sale {
     max-width: 500px; }
     @media screen and (max-width: 550px) {

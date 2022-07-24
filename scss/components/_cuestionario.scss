@@ -1,11 +1,11 @@
 @import '../base/base';
 @import '../utilities/mixin';
-/*
-            background-color: map-get($colores , "color-secundario");*/
+
 .main-contacto{
+    
     background-image: url(https://thumbs.dreamstime.com/z/el-doodle-de-los-medios-sociales-es-un-patr%C3%B3n-sin-fisuras-ornamento-repetido-con-elementos-dibujados-mano-sobre-fondo-blanco-162559147.jpg);
     background-position: center center;
-    
+
     section{
         article{
             form{
