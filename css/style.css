@@ -75,8 +75,43 @@ div {
       .main-contacto section article form .cuestionario .checkbox p {
         margin: 10px; }
 
-.main-nosotros {
-  background-color: black; }
+header {
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 0px 2px 0px; }
+
+.main-nosotros .nosotros {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  @media screen and (max-width: 550px) {
+    .main-nosotros .nosotros .logo2 .figure-logo2 img {
+      max-width: 250px; } }
+  .main-nosotros .nosotros .sobreNosotros {
+    padding-left: 20px;
+    max-width: 500px; }
+    .main-nosotros .nosotros .sobreNosotros h2, .main-nosotros .nosotros .sobreNosotros .main-contacto section article form .titulo p, .main-contacto section article form .titulo .main-nosotros .nosotros .sobreNosotros p, .main-nosotros .nosotros .sobreNosotros .main-contacto section article form .labels p, .main-contacto section article form .labels .main-nosotros .nosotros .sobreNosotros p, .main-nosotros .nosotros .sobreNosotros .main-contacto section article form .selector p, .main-contacto section article form .selector .main-nosotros .nosotros .sobreNosotros p, .main-nosotros .nosotros .sobreNosotros .main-contacto section article form .listaDesplegable p, .main-contacto section article form .listaDesplegable .main-nosotros .nosotros .sobreNosotros p, .main-nosotros .nosotros .sobreNosotros .main-contacto section article form .cuestionario p, .main-contacto section article form .cuestionario .main-nosotros .nosotros .sobreNosotros p {
+      color: #ff771c; }
+
+.main-nosotros .misionVisionValores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px 0px 0px 0px;
+  margin-top: 10px;
+  margin-bottom: 70px;
+  padding-top: 40px; }
+  .main-nosotros .misionVisionValores .mision, .main-nosotros .misionVisionValores .vision, .main-nosotros .misionVisionValores .valores {
+    text-align: center; }
+    .main-nosotros .misionVisionValores .mision .misionVisionValores-titulo, .main-nosotros .misionVisionValores .vision .misionVisionValores-titulo, .main-nosotros .misionVisionValores .valores .misionVisionValores-titulo {
+      color: #ff771c;
+      font-size: larger; }
+  .main-nosotros .misionVisionValores .vision {
+    max-width: 770px; }
 
 .destacados {
   display: flex;
@@ -184,12 +219,19 @@ div {
       margin: 30px; }
       .tips-redes .article-redes div:hover {
         transform: scale(1.15); }
-  .tips-redes .article-tips div .sale {
-    max-width: 500px; }
-    @media screen and (max-width: 550px) {
-      .tips-redes .article-tips div .sale {
-        max-width: 250px;
-        margin-bottom: 30px; } }
+  .tips-redes .article-tips div {
+    transition: all 300ms;
+    position: relative;
+    margin: 30px; }
+    .tips-redes .article-tips div:hover {
+      transform: scale(1.15); }
+    .tips-redes .article-tips div a {
+      text-decoration: none; }
+      .tips-redes .article-tips div a p {
+        color: black;
+        font-size: 3rem;
+        font-weight: 900;
+        margin: 20px; }
 
 .section-footer {
   padding-top: 50px;

@@ -1,6 +1,63 @@
 @import '../base/base';
 @import '../utilities/mixin';
 
+
+
+header{
+    border-style: solid;
+    border-color: black;
+    border-width: 0px 0px 2px 0px;
+}
 .main-nosotros{
-    background-color: black;
+   
+    .nosotros {
+        margin-top: 40px;
+        .logo2{
+            .figure-logo2{
+                img{
+                    @media screen and (max-width: 550px) {
+                        max-width: 250px;
+                    }
+                }
+            }
+        }
+        @include flexRow (wrap , center);
+        .sobreNosotros{
+            h2{
+                color: $color-secundario;
+            }
+            padding-left: 20px;
+            max-width: 500px;
+        }
+    }
+    
+    .misionVisionValores{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-style: solid;
+        border-color: black;
+        border-width: 2px 0px 0px 0px;
+        margin-top: 10px;
+        margin-bottom: 70px;
+        padding-top: 40px;
+        
+
+        .mision{
+            text-align: center;
+            .misionVisionValores-titulo{
+                color: $color-secundario;
+                font-size: larger;
+            }
+        }
+        .vision{
+            @extend .mision;
+            max-width: 770px;
+        }
+        .valores{
+            @extend .mision;
+        }
+    }
 }
